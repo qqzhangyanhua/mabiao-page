@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { GITHUB_URL, RELEASES_URL } from "../data";
+import { GITHUB_URL } from "../data";
 import { useActiveSection, usePrefersReducedMotion, useScrolled, useSlidingIndicator } from "../hooks";
 import { AppLogo } from "./AppLogo";
 import { GitHubMark } from "./Marks";
@@ -58,9 +58,6 @@ export function Nav() {
           <a className="nav-gh" href={GITHUB_URL} rel="noreferrer" target="_blank">
             <GitHubMark />
             <span>GitHub</span>
-          </a>
-          <a className="btn btn-sm" href={RELEASES_URL} rel="noreferrer" target="_blank">
-            下载
           </a>
         </div>
       </nav>

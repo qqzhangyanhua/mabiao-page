@@ -429,9 +429,10 @@ button:focus-visible {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 800px;
+  max-width: 560px;
   margin: 0 auto;
-  padding: 44px 24px 28px;
+  gap: 0;
+  padding: 18px 24px 10px;
 }
 
 /* Announcement Badge */
@@ -444,8 +445,8 @@ button:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 13px 4px 6px;
-  margin-bottom: 16px;
+  padding: 3px 11px 3px 5px;
+  margin: 0 0 20px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(226, 232, 240, 0.9);
@@ -455,7 +456,7 @@ button:focus-visible {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   color: var(--text-secondary);
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 550;
   animation: rise 0.55s var(--ease) both;
   transition: 
@@ -519,62 +520,35 @@ button:focus-visible {
   color: var(--purple);
 }
 
-.hero-mark-wrap {
-  display: block;
-  margin-bottom: 12px;
-  animation: rise 0.62s var(--ease) both;
-}
-
-.hero-mark {
-  display: inline-flex;
+.hero-copy {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 8px;
-  border-radius: 18px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 255, 0.9) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.95);
-  box-shadow: 
-    0 12px 30px -6px rgba(79, 70, 229, 0.2),
-    0 3px 8px -2px rgba(15, 23, 42, 0.04),
-    0 0 0 1px rgba(99, 102, 241, 0.12),
-    inset 0 1.5px 0 rgba(255, 255, 255, 1);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  transition:
-    transform 0.55s var(--ease-spring),
-    box-shadow 0.55s var(--ease);
-}
-
-.hero-mark:hover {
-  transform: translateY(-3px) rotate(-5deg) scale(1.05);
-  box-shadow: 
-    0 18px 42px -8px rgba(79, 70, 229, 0.3),
-    0 6px 14px rgba(15, 23, 42, 0.05),
-    0 0 0 1px rgba(99, 102, 241, 0.2),
-    inset 0 1.5px 0 rgba(255, 255, 255, 1);
-}
-
-.hero-mark img,
-.hero-mark .brand-icon {
-  display: block;
-  border-radius: 11px;
+  gap: 6px;
 }
 
 .hero-title-block {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .hero-title,
 .hero h1 {
   margin: 0;
   overflow: hidden;
-  font-size: clamp(38px, 6vw, 56px);
+  font-size: clamp(28px, 4.4vw, 36px);
   font-weight: 800;
-  letter-spacing: -0.035em;
-  line-height: 1.08;
+  letter-spacing: -0.04em;
+  line-height: 1;
   color: #0b132b;
+}
+
+.hero-title .hero-char {
   background: linear-gradient(180deg, #090d1f 0%, #1e293b 85%, #334155 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -595,30 +569,51 @@ button:focus-visible {
 }
 
 .hero-wordmark {
-  margin: 6px 0 0;
+  margin: 0;
   color: var(--muted);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.44em;
-  margin-right: -0.44em;
-  opacity: 0.8;
+  letter-spacing: 0.46em;
+  margin-right: -0.46em;
+  opacity: 0.72;
 }
 
 .hero-lead {
-  margin: 16px 0 0;
-  max-width: 36em;
-  color: var(--text-secondary);
-  font-size: 16px;
-  line-height: 1.68;
+  margin: 0;
+  max-width: 26em;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
   font-weight: 450;
   animation: rise 0.62s var(--ease) 0.2s both;
 }
 
-.hero-actions {
+.hero-cta {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
   margin-top: 22px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  margin: 0;
   animation: rise 0.58s var(--ease) 0.28s both;
+}
+
+.hero-actions .btn {
+  height: 40px;
+  padding: 0 22px;
+}
+
+.hero-actions .btn::after {
+  animation: btn-sheen 0.95s var(--ease) 0.95s both;
+}
+
+.hero-actions .btn svg {
+  animation: icon-nudge 2.8s var(--ease) 1.35s infinite;
 }
 
 .hero-trust {
@@ -626,15 +621,12 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-  padding: 6px 16px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(226, 232, 240, 0.75);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  gap: 8px;
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
   color: var(--muted);
   font-size: 12px;
   font-weight: 500;
@@ -659,11 +651,11 @@ button:focus-visible {
 /* ================= Mockup Stage ================= */
 .mock-stage {
   position: relative;
-  max-width: 1040px;
-  margin: 16px auto 0;
-  padding: 0 24px 36px;
+  max-width: 920px;
+  margin: 4px auto 0;
+  padding: 4px 24px 32px;
   transform-style: preserve-3d;
-  animation: fade 0.7s var(--ease) 0.42s both;
+  animation: fade 0.7s var(--ease) 0.28s both;
 }
 
 .mock-glow {
@@ -812,6 +804,7 @@ button:focus-visible {
 }
 
 .mock-status-dot {
+  position: relative;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -819,11 +812,22 @@ button:focus-visible {
   box-shadow: 0 0 0 1.5px rgba(16, 185, 129, 0.2);
 }
 
-/* Tabs Bar */
+.mock-status-dot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.35);
+  animation: pulse-ring 2.4s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+/* Tabs — thin control under the window, not marketing capsules */
 .mock-tabs-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-top: 14px;
+  margin-bottom: 0;
+  animation: rise 0.55s var(--ease) 0.42s both;
 }
 
 .mock-tabs {
@@ -832,23 +836,21 @@ button:focus-visible {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 4px;
-  padding: 5px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(226, 232, 240, 0.88);
-  box-shadow: 
-    0 2px 10px -2px rgba(15, 23, 42, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  gap: 2px;
+  padding: 3px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .mock-tab-pill {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 9px;
+  border-radius: 8px;
   background: #ffffff;
   border: 1px solid rgba(226, 232, 240, 0.95);
   box-shadow: 0 1px 4px rgba(15, 23, 42, 0.06), inset 0 1px 0 rgba(255, 255, 255, 1);
@@ -873,34 +875,15 @@ button:focus-visible {
   z-index: 1;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
+  gap: 0;
+  padding: 5px 12px;
   border: 1px solid transparent;
-  border-radius: 9px;
+  border-radius: 8px;
   background: transparent;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 550;
   transition: color 0.2s var(--ease), background 0.2s var(--ease);
-}
-
-.mock-tab-btn .tab-indicator {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--faint);
-  transition: all 0.25s var(--ease);
-}
-
-.tab-text-main {
-  font-weight: 600;
-}
-
-.tab-text-tag {
-  font-size: 11px;
-  color: var(--faint);
-  font-weight: 450;
-  margin-left: 2px;
 }
 
 .mock-tab-btn:hover {
@@ -911,20 +894,36 @@ button:focus-visible {
   color: var(--purple);
 }
 
-.mock-tab-btn.active .tab-text-tag {
-  color: #818cf8;
-}
-
-.mock-tab-btn.active .tab-indicator {
-  background: var(--purple);
-  box-shadow: 0 0 0 3px var(--purple-soft);
-}
-
 .mock-window {
   position: relative;
   overflow: hidden;
+  max-height: min(520px, 58vh);
   background: #f8fafc;
   line-height: 0;
+}
+
+.mock-window::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 22%;
+  z-index: 4;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(99, 102, 241, 0.05) 42%,
+    rgba(255, 255, 255, 0.22) 50%,
+    rgba(99, 102, 241, 0.04) 58%,
+    transparent 100%
+  );
+}
+
+.mock-ready .mock-window::after {
+  animation: mock-scan 7.8s var(--ease) 1.2s infinite;
 }
 
 .mock-frame {
@@ -932,6 +931,7 @@ button:focus-visible {
   z-index: 1;
   transform-origin: center top;
   will-change: transform;
+  transition: none;
 }
 
 .mock-stack {
@@ -943,6 +943,9 @@ button:focus-visible {
   display: block;
   width: 100%;
   height: auto;
+  max-height: min(520px, 58vh);
+  object-fit: cover;
+  object-position: top center;
   visibility: hidden;
 }
 
@@ -960,120 +963,13 @@ button:focus-visible {
   object-fit: cover;
   object-position: top center;
   opacity: 0;
-  transform: scale(1.02);
-  transition:
-    opacity 0.48s var(--ease),
-    transform 0.72s var(--ease);
+  transform: scale(1.025);
+  transition: opacity 0.48s var(--ease);
 }
 
 .mock-stack .mock-image.is-on {
   opacity: 1;
-  transform: scale(1);
-}
-
-/* Floating Glass KPIs */
-.mock-kpis {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  z-index: 2;
-  display: flex;
-  gap: 12px;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(8px);
-  transition:
-    opacity 0.35s var(--ease),
-    transform 0.35s var(--ease);
-}
-
-.mock-kpis.is-on {
-  opacity: 1;
-  transform: none;
-}
-
-.mock-kpi {
-  flex: 1;
-  min-width: 0;
-  padding: 12px 16px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.90);
-  border: 1px solid rgba(226, 232, 240, 0.92);
-  box-shadow: 
-    0 12px 28px -4px rgba(15, 23, 42, 0.09),
-    0 2px 6px -1px rgba(15, 23, 42, 0.04),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  animation: rise 0.55s var(--ease) var(--d, 0s) both;
-}
-
-.mock-kpi-head {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 2px;
-}
-
-.mock-kpi-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-}
-
-.mock-kpi-dot.tone-purple {
-  background: var(--purple);
-  box-shadow: 0 0 6px var(--purple-glow);
-}
-
-.mock-kpi-dot.tone-cyan {
-  background: var(--cyan);
-  box-shadow: 0 0 6px var(--cyan-glow);
-}
-
-.mock-kpi-dot.tone-green {
-  background: var(--green);
-  box-shadow: 0 0 6px var(--green-glow);
-}
-
-.mock-kpi-label {
-  color: var(--muted);
-  font-size: 11.5px;
-  font-weight: 550;
-}
-
-.mock-kpi b {
-  display: block;
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.2;
-  color: var(--text);
-  font-variant-numeric: tabular-nums;
-}
-
-.mock-kpi-sub {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 4px;
-  font-size: 11px;
-  color: var(--muted);
-}
-
-.kpi-tag {
-  padding: 1px 5px;
-  border-radius: 4px;
-  background: var(--purple-soft);
-  color: var(--purple);
-  font-weight: 600;
-  font-size: 10px;
-}
-
-.kpi-tag-green {
-  background: var(--green-soft);
-  color: var(--green);
+  animation: mock-reveal-drift 5.2s linear both;
 }
 
 .mock-tab-progress {
@@ -1093,7 +989,7 @@ button:focus-visible {
 /* ================= 24H Gantt ================= */
 .gantt {
   position: relative;
-  margin: 0 auto 36px;
+  margin: 0 auto 20px;
   max-width: 960px;
   padding: 20px 24px 18px;
   border: 1px solid rgba(226, 232, 240, 0.9);
@@ -1195,12 +1091,12 @@ button:focus-visible {
 .section {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 92px 24px 0;
+  padding: 60px 24px 0;
 }
 
 .section-head {
   max-width: 640px;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
 }
 
 .eyebrow {
@@ -1230,10 +1126,10 @@ button:focus-visible {
 }
 
 .section-lead {
-  margin: 14px 0 0;
+  margin: 10px 0 0;
   color: var(--muted);
-  font-size: 15.5px;
-  line-height: 1.74;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .section-lead code {
@@ -1248,13 +1144,13 @@ button:focus-visible {
 
 /* ================= Timeline Section ================= */
 .timeline-section {
-  padding-top: 96px;
+  padding-top: 60px;
 }
 
 .timeline-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 36px;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 24px;
   align-items: center;
 }
 
@@ -1439,7 +1335,7 @@ button:focus-visible {
 
 .timeline-mock:hover,
 .events-mock:hover {
-  transform: translateY(-6px) scale(1.018);
+  transform: translateY(-4px) scale(1.01);
   border-color: #a5b4fc;
   box-shadow: 
     0 38px 84px -16px rgba(79, 70, 229, 0.22),
@@ -1447,11 +1343,19 @@ button:focus-visible {
     0 0 0 1px rgba(165, 180, 252, 0.55);
 }
 
+.timeline-mock .mock-window,
+.events-mock .mock-window {
+  max-height: min(400px, 46vh);
+}
+
 .timeline-mock img,
 .events-mock img {
   display: block;
   width: 100%;
   height: auto;
+  max-height: min(400px, 46vh);
+  object-fit: cover;
+  object-position: top center;
   transition: filter 0.5s var(--ease), transform 0.55s var(--ease);
 }
 
@@ -1462,25 +1366,25 @@ button:focus-visible {
 
 /* ================= Events Section ================= */
 .events-section {
-  padding-top: 96px;
+  padding-top: 60px;
 }
 
 .events-grid {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 36px;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 24px;
   align-items: center;
 }
 
 /* ================= Tray Section ================= */
 .tray-section {
-  padding-top: 96px;
+  padding-top: 60px;
 }
 
 .tray-grid {
   display: grid;
-  grid-template-columns: 1fr 0.92fr;
-  gap: 36px;
+  grid-template-columns: 1fr 0.88fr;
+  gap: 24px;
   align-items: start;
 }
 
@@ -1497,7 +1401,7 @@ button:focus-visible {
   z-index: 1;
   display: flex;
   justify-content: flex-end;
-  width: min(100%, 350px);
+  width: min(100%, 320px);
   padding: 7px 12px;
   border: 1px solid rgba(226, 232, 240, 0.9);
   border-radius: 12px;
@@ -1548,7 +1452,7 @@ button:focus-visible {
   position: relative;
   z-index: 1;
   margin: 0;
-  width: min(100%, 350px);
+  width: min(100%, 320px);
   border-radius: 16px;
   overflow: hidden;
   transition:
@@ -1581,13 +1485,16 @@ button:focus-visible {
 }
 
 .tray-frame:hover {
-  transform: translateY(-6px) scale(1.022);
+  transform: translateY(-4px) scale(1.012);
 }
 
 .tray-image {
   display: block;
   width: 100%;
   height: auto;
+  max-height: min(480px, 56vh);
+  object-fit: cover;
+  object-position: top center;
   border-radius: 16px;
   border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: 0 24px 50px -14px rgba(15, 23, 42, 0.18), 0 0 0 1px rgba(15, 23, 42, 0.04);
@@ -1895,15 +1802,10 @@ button:focus-visible {
 }
 
 .tray-desktop .tray-image {
-  width: min(100%, 350px);
+  width: min(100%, 320px);
   height: auto;
   max-height: 100%;
   object-fit: contain;
-}
-
-.mock-stack .mock-tray-layer {
-  background: #e8eef4;
-  object-fit: unset;
 }
 
 /* ================= Features Grid ================= */
@@ -2164,8 +2066,8 @@ button:focus-visible {
 /* ================= Privacy Section ================= */
 .privacy {
   max-width: var(--max);
-  margin: 96px auto 0;
-  padding: 54px 24px 8px;
+  margin: 60px auto 0;
+  padding: 40px 24px 8px;
   border-top: 1px solid rgba(226, 232, 240, 0.8);
 }
 
@@ -2242,6 +2144,58 @@ button:focus-visible {
 /* ================= Download Section ================= */
 .download {
   padding-bottom: 24px;
+}
+
+.download-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.download-alts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px 4px;
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+.download-alt {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-alts a {
+  color: var(--text-secondary);
+  font-weight: 550;
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.download-alts a:hover {
+  color: var(--purple);
+}
+
+.download-alts-sep {
+  color: var(--line-strong);
+  font-weight: 400;
+}
+
+.download-tip {
+  margin: 0;
+  max-width: 42em;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.65;
+}
+
+.download-tip code {
+  font-size: 12px;
 }
 
 .platforms {
@@ -2482,6 +2436,58 @@ button:focus-visible {
   }
 }
 
+@keyframes btn-sheen {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes icon-nudge {
+  0%,
+  72%,
+  100% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  88% {
+    transform: translateY(-1px);
+  }
+  94% {
+    transform: translateY(1.5px);
+  }
+}
+
+@keyframes mock-scan {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  72% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateY(460%);
+    opacity: 0;
+  }
+}
+
+@keyframes mock-reveal-drift {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.055) translate3d(0, -1.6%, 0);
+  }
+}
+
 /* Spotlight Hover Effect */
 [data-spot] {
   --spot-x: 50%;
@@ -2560,7 +2566,7 @@ button:focus-visible {
   }
 
   .hero {
-    padding-top: 54px;
+    padding-top: 14px;
   }
 
   .privacy li {
@@ -2594,11 +2600,7 @@ button:focus-visible {
   }
 
   .hero-lead {
-    font-size: 15.5px;
-  }
-
-  .mock-kpis {
-    display: none;
+    font-size: 14.5px;
   }
 
   .gantt-head {
@@ -2627,20 +2629,20 @@ button:focus-visible {
   }
 
   .hero-badge,
-  .hero-mark-wrap,
-  .hero-mark,
   .hero-title span,
   .hero-char,
   .hero-wordmark,
   .hero-lead,
   .hero-actions,
+  .hero-actions .btn svg,
   .hero-trust,
   .mock-stage,
   .mock-frame,
   .mock-float,
   .mock-image,
-  .mock-kpi,
-  .mock-kpis,
+  .mock-tabs-wrap,
+  .mock-status-dot,
+  .mock-status-dot::after,
   .mock-tab-progress,
   .gantt-track b,
   .tray-meter-fill,
@@ -2659,7 +2661,9 @@ button:focus-visible {
   .btn::after,
   .platform::after,
   .source-group li::after,
-  [data-spot]::before {
+  [data-spot]::before,
+  .mock-window::after,
+  .mock-status-dot::after {
     content: none;
   }
 

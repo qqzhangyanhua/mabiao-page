@@ -3,9 +3,8 @@ export const VERSION = "0.1.1";
 export const GITHUB_URL = "https://github.com/qqzhangyanhua/mabiao";
 export const RELEASES_URL = "https://github.com/qqzhangyanhua/mabiao/releases";
 
-export const ONE_LINER = "本机 AI 用量，扫完就能看";
-
-export const HERO_LEAD = "只读扫描本机各 AI 编程 CLI 的会话，归一成消耗记录。";
+export const ONE_LINER =
+  "扫描本机各 AI 编程 CLI 的会话数据，归一成「消耗记录」，展示 token 消耗、工作时间线与完整事件流。";
 
 export type FeatureItem = {
   title: string;
