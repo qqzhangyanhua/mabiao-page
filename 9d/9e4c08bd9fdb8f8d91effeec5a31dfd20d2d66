@@ -1,0 +1,80 @@
+src/components/Hero.tsx
+  s_be02c03ccc1da1::t_bf5e7ce9578144 56-78
+  s_be02c03ccc1da1::t_30c33b86793436 30-37,39,42-53,55
+  s_be02c03ccc1da1::t_2f55a2fe757918 2
+src/components/Nav.tsx
+  s_be02c03ccc1da1::t_8e6bf87c7cebaa 2
+src/styles.css
+  s_be02c03ccc1da1::t_ffcebca11b86b8 2069-2070
+  s_be02c03ccc1da1::t_49d51c56244409 609,822,2155,2165,2171,2178,2182,2187,2195,2199,2439-2490
+  s_be02c03ccc1da1::t_c7d9719ae35ac6 624-629,2170
+  s_be02c03ccc1da1::t_ca4d0465abdd06 611-618
+  s_be02c03ccc1da1::t_35980d75ab7557 449
+  s_be02c03ccc1da1::t_4623b71367e9db 966-967,972
+  s_be02c03ccc1da1::t_5252271ad210e2 1369,1374-1375,1381,1386-1387
+  s_be02c03ccc1da1::t_ef2e446b10bd51 582,606
+  s_be02c03ccc1da1::t_ff54676e247a6e 2643-2645
+  s_be02c03ccc1da1::t_50589dbb1b3a92 2569
+  s_be02c03ccc1da1::t_b144e3378f9814 523-525,531-533,543,2150,2158
+  s_be02c03ccc1da1::t_963ca7e9ffc07e 1404,1455,1805
+  s_be02c03ccc1da1::t_add5276da97e97 900
+  s_be02c03ccc1da1::t_04d3ee3df30ddc 1147,1152-1153
+  s_be02c03ccc1da1::t_4e67f54a54b782 830
+  s_be02c03ccc1da1::t_a5305c2e3c880f 432,434-435,878
+  s_be02c03ccc1da1::t_92bd2143f3b355 2603
+  s_be02c03ccc1da1::t_45c51006656a90 2664-2666
+  s_be02c03ccc1da1::t_5b48b125d95f1f 572,574,576-578,583-586,591,593-594,597-602,607-608,2151-2152,2160-2161,2163,2169,2190,2192
+  s_be02c03ccc1da1::t_18c13e314953d0 654,656
+  s_be02c03ccc1da1::t_dc09d7ec56a54a 807,815-821
+  s_be02c03ccc1da1::t_f48293f378d86d 2637
+  s_be02c03ccc1da1::t_3439e057302ff3 1338
+  s_be02c03ccc1da1::t_60f301745f7f3a 946-948
+  s_be02c03ccc1da1::t_07da89a64fe149 655
+  s_be02c03ccc1da1::t_590dbdc107e6c0 1129,1131-1132
+  s_be02c03ccc1da1::t_a86e5e15d3b2af 1346-1350,1356-1358
+  s_be02c03ccc1da1::t_5bb97da92d2555 1094,1099
+  s_be02c03ccc1da1::t_9bb519c9c41d82 1488,1495-1497
+  s_be02c03ccc1da1::t_81fd760604b992 527,534,541,544,546-548,551,839
+  s_be02c03ccc1da1::t_52a39443047532 992
+  s_be02c03ccc1da1::t_5950787db17f26 905-928
+  s_be02c03ccc1da1::t_fbe2966cc91bda 448
+  s_be02c03ccc1da1::t_9963ce198cebee 610
+  s_be02c03ccc1da1::t_54a90f5f7a5df6 823-824
+  s_be02c03ccc1da1::t_bd9589187fc79e 828-829
+  s_be02c03ccc1da1::t_864f6f46df1656 840-842
+  s_be02c03ccc1da1::t_6c597904b8833c 879
+  s_be02c03ccc1da1::t_969809208142ed 2149
+  s_be02c03ccc1da1::t_26edf9428cbb4f 2153-2154
+  s_be02c03ccc1da1::t_8ee57ae6865500 2156-2157
+  s_be02c03ccc1da1::t_2488d9a21dcd51 2159
+  s_be02c03ccc1da1::t_35c94ccc5ecc64 2162
+  s_be02c03ccc1da1::t_a59f595285c3e7 2164
+  s_be02c03ccc1da1::t_7a20e5be8b0a95 2166-2168
+  s_be02c03ccc1da1::t_4537213fe94b4d 2172-2177
+  s_be02c03ccc1da1::t_1a93973835f562 2179-2181
+  s_be02c03ccc1da1::t_ce06ca93c446e9 2183-2186
+  s_be02c03ccc1da1::t_975161893ed090 2188-2189
+  s_be02c03ccc1da1::t_68a0dbb9750398 2191
+  s_be02c03ccc1da1::t_fca2cac21738c5 2193-2194
+  s_be02c03ccc1da1::t_b94cc9b9fbd7be 2196-2198
+  s_be02c03ccc1da1::t_dea4bf6944cbf0 2200
+  s_be02c03ccc1da1::t_76d280ffac674b 459,658,843-846,853,881,884,934
+src/data.ts
+  s_be02c03ccc1da1::t_f182643c2244a1 6-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.6.23",
+  "base_commit_sha": "9d9e4c08bd9fdb8f8d91effeec5a31dfd20d2d66",
+  "prompts": {},
+  "sessions": {
+    "s_be02c03ccc1da1": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "65c27c52-ed1f-4f83-8f39-c8a6e884baa6",
+        "model": "grok-4.6"
+      },
+      "human_author": "张艳华 <939593210@qq.com>"
+    }
+  }
+}
