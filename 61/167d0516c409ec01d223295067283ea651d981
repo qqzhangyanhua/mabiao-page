@@ -1,0 +1,134 @@
+src/styles.css
+  s_be02c03ccc1da1::t_acab2ea0572126 127,132-133,213,226,250,258,260,294-295,311-312,328,331-332,375,430,442,444-445,487,529-530,625-626,645-646,661,695-696,701-702,749,759,789,802-803,830-831,834,872-875,924,931-932,938,1014,1016,1058,1095,1127-1128,1140-1141,1145,1157,1207-1208,1258,1304,1371,1402-1403,1472,1488,1496-1497,1517-1518,1548-1549,1664,1692,1731,1787,1859,1921,2068,2071-2072,2229,2257,2311,2317-2318,2376-2396,2403,2489,2513-2514
+  s_be02c03ccc1da1::t_81ee0d0234cbc0 124-126
+  s_be02c03ccc1da1::t_4193b29d77985f 128-131
+  s_be02c03ccc1da1::t_602b5595384b40 134-136,210-212
+  s_be02c03ccc1da1::t_f2b3c6e49adcb3 214-216,223-225
+  s_be02c03ccc1da1::t_3748b1fe34db5a 227-229,247-249
+  s_be02c03ccc1da1::t_48248b03300e3f 251-253,255-257
+  s_be02c03ccc1da1::t_d6012ecda88a21 259
+  s_be02c03ccc1da1::t_376bd82edc6013 261-263,291-293
+  s_be02c03ccc1da1::t_5c78ed9004271c 296-298,308-310
+  s_be02c03ccc1da1::t_52327107663252 313-315,325-327
+  s_be02c03ccc1da1::t_10eddfc001ff15 329-330
+  s_be02c03ccc1da1::t_5bc7a7566dfc93 333-335,372-374
+  s_be02c03ccc1da1::t_286611bc147745 376-378,427-429
+  s_be02c03ccc1da1::t_7e48690c32c160 431-433,439-441
+  s_be02c03ccc1da1::t_f5a32597b827a5 443
+  s_be02c03ccc1da1::t_cb25edc6e5554e 446-448,484-486
+  s_be02c03ccc1da1::t_12cd3aa772ba75 488-490,526-528
+  s_be02c03ccc1da1::t_0c16273b2e4b9a 531-533,622-624
+  s_be02c03ccc1da1::t_a6935fdb56d34a 627-629,642-644
+  s_be02c03ccc1da1::t_090c22d0dfe243 647-649,658-660
+  s_be02c03ccc1da1::t_310108c255c6ea 662-664,692-694
+  s_be02c03ccc1da1::t_6bba15fc6c54b8 697-700
+  s_be02c03ccc1da1::t_41b9792ecd3f9f 703-705,746-748
+  s_be02c03ccc1da1::t_95a312e251597e 750-752,756-758
+  s_be02c03ccc1da1::t_704f1ee63dffd8 760-762,786-788
+  s_be02c03ccc1da1::t_304560551b4911 790-792,799-801
+  s_be02c03ccc1da1::t_4c88276f378911 804-806,827-829
+  s_be02c03ccc1da1::t_7eef133d2b9a51 832-833
+  s_be02c03ccc1da1::t_f412be0f26f66a 835-837,869-871
+  s_be02c03ccc1da1::t_d0b883d9cd0887 876-878,921-923
+  s_be02c03ccc1da1::t_9a41eb10a9aa1c 925-930
+  s_be02c03ccc1da1::t_9a78404aa2c973 933-937
+  s_be02c03ccc1da1::t_46ad0902feba39 939-941,1011-1013
+  s_be02c03ccc1da1::t_e60996823ac959 1015
+  s_be02c03ccc1da1::t_d7ee1c597fa641 1017-1019,1055-1057
+  s_be02c03ccc1da1::t_a8c76a5a38ee01 1059-1061,1092-1094
+  s_be02c03ccc1da1::t_aae5ce45a80717 1096-1098,1124-1126
+  s_be02c03ccc1da1::t_26e8fe96d72c1e 1129-1131,1137-1139
+  s_be02c03ccc1da1::t_5a3cc5c7482be5 1142-1144
+  s_be02c03ccc1da1::t_0de6858238dd50 1146-1148,1154-1156
+  s_be02c03ccc1da1::t_b68c55d582917f 1158-1160,1204-1206
+  s_be02c03ccc1da1::t_2bff20bb954630 1209-1211,1255-1257
+  s_be02c03ccc1da1::t_3766c5f809b754 1259-1261,1301-1303
+  s_be02c03ccc1da1::t_e81c81747e3b75 1305-1307,1368-1370
+  s_be02c03ccc1da1::t_666c619d095204 1372-1374,1399-1401
+  s_be02c03ccc1da1::t_04d46cdcb879ac 1404-1406,1469-1471
+  s_be02c03ccc1da1::t_c102aa9d686f07 1473-1475,1485-1487
+  s_be02c03ccc1da1::t_42906536dcb9c2 1489-1491,1493-1495
+  s_be02c03ccc1da1::t_879d4ae7371502 1498-1500,1514-1516
+  s_be02c03ccc1da1::t_ee7c85a016887e 1519-1521,1545-1547
+  s_be02c03ccc1da1::t_8e30581c4aa066 1550-1552,1661-1663
+  s_be02c03ccc1da1::t_892a5095583386 1665-1667,1689-1691
+  s_be02c03ccc1da1::t_ac956243420406 1693-1695,1728-1730
+  s_be02c03ccc1da1::t_6896ae851df229 1732-1734,1784-1786
+  s_be02c03ccc1da1::t_4a1307d159e7e0 1788-1790,1856-1858
+  s_be02c03ccc1da1::t_864e78714944a1 1860-1862,1918-1920
+  s_be02c03ccc1da1::t_d56c779e6f783e 1922-1924,2065-2067
+  s_be02c03ccc1da1::t_1e4d607da918fe 2069-2070
+  s_be02c03ccc1da1::t_b2bf8fa7022bb5 2073-2075,2226-2228
+  s_be02c03ccc1da1::t_3ca9fd09c9cd80 2230-2232,2254-2256
+  s_be02c03ccc1da1::t_7bf3b7e6d1f5cd 2258-2260,2308-2310
+  s_be02c03ccc1da1::t_aa88d9c961335c 2312-2316
+  s_be02c03ccc1da1::t_4402fe52993ec5 2319-2321,2373-2375
+  s_be02c03ccc1da1::t_e9d2fe930d6348 2397-2402
+  s_be02c03ccc1da1::t_f5416488c0e480 2404-2406,2486-2488
+  s_be02c03ccc1da1::t_60adb41271675b 2490-2492,2510-2512
+  s_be02c03ccc1da1::t_da89af52637e46 2515-2517
+.gitignore
+  s_a00075f49b3bf4::t_ad9900b8660e35 1-5
+.npmrc
+  s_a00075f49b3bf4::t_62e00724e170be 1
+README.md
+  s_a00075f49b3bf4::t_dbddcd170aa9b3 1
+package.json
+  s_a00075f49b3bf4::t_be772ee08ee479 1-22
+src/components/Atmosphere.tsx
+  s_4ba7aa50f29b98::t_009e9216b268f7 1-63
+src/components/Nav.tsx
+  s_af50cb6c24691a::t_fcb3e6303d98e0 1-69
+src/main.tsx
+  s_a00075f49b3bf4::t_45d2d76b498db7 1-15
+src/vite-env.d.ts
+  s_a00075f49b3bf4::t_5accb13740cba4 1
+tsconfig.app.json
+  s_a00075f49b3bf4::t_043f86383fca08 1-22
+tsconfig.json
+  s_a00075f49b3bf4::t_2ece01267b93a0 1-7
+tsconfig.node.json
+  s_a00075f49b3bf4::t_c100107bc6a7c7 1-20
+vite.config.ts
+  s_a00075f49b3bf4::t_6e1bd3def9c242 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.6.23",
+  "base_commit_sha": "61167d0516c409ec01d223295067283ea651d981",
+  "prompts": {},
+  "sessions": {
+    "s_4ba7aa50f29b98": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "b17d8316-ec63-4613-8468-b5f29348a67f",
+        "model": "grok-4.6"
+      },
+      "human_author": "张艳华 <939593210@qq.com>"
+    },
+    "s_a00075f49b3bf4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "621e73d4-1d0c-454e-bece-e8ec0ba3d6c2",
+        "model": "claude-opus-5"
+      },
+      "human_author": "张艳华 <939593210@qq.com>"
+    },
+    "s_af50cb6c24691a": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "ca774dc3-44b1-4285-9e6c-7d0401116a3e",
+        "model": "grok-4.5"
+      },
+      "human_author": "张艳华 <939593210@qq.com>"
+    },
+    "s_be02c03ccc1da1": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "65c27c52-ed1f-4f83-8f39-c8a6e884baa6",
+        "model": "grok-4.6"
+      },
+      "human_author": "张艳华 <939593210@qq.com>"
+    }
+  }
+}
