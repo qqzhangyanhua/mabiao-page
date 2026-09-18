@@ -1,0 +1,21 @@
+package.json
+  s_bb2593b2df3a72::t_0e04cafd0fd3d3 12,17
+pnpm-lock.yaml
+  s_bb2593b2df3a72::t_4690bc77c2a03a 11-13,21-23,302,341,347,353,359,365,371,377,383,389,395,401,407,413,460-462,551-553,978-979,1072-1073
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.6.23",
+  "base_commit_sha": "6eb8d760e079c5de001e38115fde1f614f733de0",
+  "prompts": {},
+  "sessions": {
+    "s_bb2593b2df3a72": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "4abc4f9f-a61a-4202-b3d4-e667d0a98231",
+        "model": "default"
+      },
+      "human_author": "张艳华 <939593210@qq.com>"
+    }
+  }
+}
