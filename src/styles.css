@@ -2142,25 +2142,129 @@ button:focus-visible {
 }
 
 /* ================= Download Section ================= */
+/* ================= Download Section & Physics Stage ================= */
 .download {
-  padding-bottom: 24px;
+  padding-bottom: 48px;
 }
 
-.download-cta {
+.download-stage {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 560px;
+  border-radius: 28px;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 18%, rgba(255, 255, 255, 0.08), transparent 55%),
+    radial-gradient(ellipse 45% 35% at 20% 80%, rgba(99, 102, 241, 0.14), transparent 50%),
+    radial-gradient(ellipse 40% 30% at 80% 85%, rgba(59, 130, 246, 0.10), transparent 50%),
+    #07080c;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 24px 64px -12px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  color: #f4f5f7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-.download-alts {
+.download-stage-ambient {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle 380px at 50% 0%, rgba(99, 102, 241, 0.18), transparent 70%);
+}
+
+.download-stage-copy {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 64px 24px 84px;
+  pointer-events: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.download-stage-copy > * {
+  pointer-events: auto;
+}
+
+.download-stage-eyebrow {
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #c7d2fe;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  cursor: default;
+}
+
+.download-stage-copy h2 {
+  margin: 0;
+  font-size: clamp(34px, 5.5vw, 54px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.18;
+  color: #f8fafc;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
+}
+
+.download-stage-lead {
+  max-width: 32rem;
+  margin: 16px 0 0;
+  color: #94a3b8;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.download-stage-cta {
+  margin-top: 28px;
+}
+
+.download-stage-btn {
+  height: 48px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 8px 28px -4px rgba(79, 70, 229, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition:
+    transform 0.2s var(--ease),
+    box-shadow 0.25s var(--ease),
+    filter 0.2s var(--ease);
+}
+
+.download-stage-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.3),
+    0 12px 36px -4px rgba(99, 102, 241, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  filter: brightness(1.06);
+}
+
+.download-stage-alts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 6px 4px;
-  color: var(--muted);
+  margin-top: 18px;
+  color: #64748b;
   font-size: 13.5px;
 }
 
@@ -2170,33 +2274,144 @@ button:focus-visible {
   gap: 8px;
 }
 
-.download-alts a {
-  color: var(--text-secondary);
-  font-weight: 550;
+.download-stage-alts a {
+  color: #cbd5e1;
+  font-weight: 500;
   text-decoration: none;
   transition: color 0.2s var(--ease);
 }
 
-.download-alts a:hover {
-  color: var(--purple);
+.download-stage-alts a:hover {
+  color: #ffffff;
 }
 
 .download-alts-sep {
-  color: var(--line-strong);
+  color: #475569;
   font-weight: 400;
 }
 
-.download-tip {
-  margin: 0;
-  max-width: 42em;
-  color: var(--muted);
+.download-stage-tip {
+  margin: 14px 0 0;
+  max-width: 38em;
+  color: #64748b;
   font-size: 12.5px;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
-.download-tip code {
-  font-size: 12px;
+.download-stage-tip code {
+  color: #a5b4fc;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 11.5px;
 }
+
+.download-stage-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 20px 0 0;
+  padding: 6px 15px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #94a3b8;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.download-stage-hint:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #f1f5f9;
+}
+
+.download-stage-hint .replay-icon {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1;
+  transition: transform 0.4s var(--ease);
+}
+
+.download-stage-hint:hover .replay-icon {
+  transform: rotate(-180deg);
+}
+
+/* ================= Physics Layer & Balls ================= */
+.download-physics-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.download-ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(18, 20, 28, 0.9);
+  box-shadow:
+    0 10px 28px -4px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: grab;
+  pointer-events: auto;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  will-change: transform;
+  display: grid;
+  place-items: center;
+  transform: translate3d(-9999px, -9999px, 0);
+  transition: box-shadow 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.download-ball:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 14px 34px -4px rgba(0, 0, 0, 0.65),
+    0 0 20px rgba(99, 102, 241, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.download-ball:active {
+  cursor: grabbing;
+  box-shadow:
+    0 18px 40px -4px rgba(0, 0, 0, 0.75),
+    0 0 26px rgba(99, 102, 241, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.download-ball-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.download-ball-badge svg {
+  width: 19px;
+  height: 19px;
+  display: block;
+  pointer-events: none;
+}
+
 
 .platforms {
   display: grid;
@@ -2620,6 +2835,19 @@ button:focus-visible {
 
   .mock-titlebar-status {
     display: none;
+  }
+
+  .download-stage {
+    min-height: 520px;
+    border-radius: 20px;
+  }
+
+  .download-stage-copy {
+    padding: 48px 16px 72px;
+  }
+
+  .download-stage-lead {
+    font-size: 14px;
   }
 }
 
